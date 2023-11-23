@@ -11,6 +11,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+      - sam deploy --template-file template.yml --stack-name ben-pipeline-alerter-stack --capabilities CAPABILITY_IAM
 artifacts:
   files:
     - pipeline-alerter-1.0.0.tgz
