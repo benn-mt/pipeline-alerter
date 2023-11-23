@@ -21,4 +21,4 @@ Resources:
             Resource: '*'
       DeploymentPreference:
 # Specifies the deployment configuration      
-          Type: Linear10PercentEvery1Minute
+          Type: AllAtOnce
